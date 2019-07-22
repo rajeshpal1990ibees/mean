@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-
+// global Promise 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/node-auth')
   .then(() =>  console.log('connection succesful'))
